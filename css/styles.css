@@ -16,11 +16,26 @@
 /*  цвет секции наша команда #F5F4FA; */
 /* цвет секции наша команда #E5E5E5; */
 /* основной цвет текста */
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  font-family: 'Roboto', 'sans-serif';
+  margin: 0;
+  font-family: "Roboto", "sans-serif";
   font-size: 14px;
 
   color: var(--paragraph-text-color);
+}
+
+.container {
+  width: 1200px;
 }
 
 .header {
@@ -30,7 +45,7 @@ body {
 
 /* logo */
 .logo {
-  font-family: 'Raleway', 'sans-serif';
+  font-family: "Raleway", "sans-serif";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
@@ -43,8 +58,21 @@ body {
   color: var(--accent-color);
 }
 
+.container-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 .list {
+  padding: 0;
+  margin: 0;
+
   list-style: none;
+}
+
+.site-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav-link {
@@ -65,6 +93,11 @@ body {
   color: var(--accent-color);
 }
 
+.auth-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .auth-nav-link {
   font-weight: 500;
   font-size: 14px;
@@ -78,14 +111,23 @@ body {
 /* hero */
 
 .hero {
+  margin-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  text-align: center;
   background-color: var(--accent-bg-color);
 }
+
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-style: 400;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -95,6 +137,11 @@ body {
 /* button */
 
 .hero-button {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
@@ -110,8 +157,16 @@ body {
 }
 /* section */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title,
 .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -121,7 +176,15 @@ body {
 }
 
 /* features */
+
+.features title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 .features-text {
+  margin-top: 0;
+  margin-bottom: 94px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -130,9 +193,14 @@ body {
 }
 
 /* our work  and our team*/
-.features-title,
-.team,
+.features-title.centered,
+.team.centered,
 .work-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  text-align: center;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -146,7 +214,25 @@ body {
   background-color: var(--buttom-bg-color);
 }
 
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team-list-iten {
+  width: 270px;
+  height: 368px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--accessorial-text-color);
+}
+
 .team-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -156,6 +242,8 @@ body {
 }
 
 .team-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -201,6 +289,11 @@ body {
 
 /* button */
 .button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
@@ -217,11 +310,15 @@ body {
 .button:hover,
 .button:focus,
 .button.current {
+  min-width: 73px;
+
   background-color: var(--button-accent-color);
   color: var(--accessorial-text-color);
 }
 
 .button.secondary {
+  min-width: 128px;
+
   background-color: var(--buttom-bg-color);
   color: var(--main-text-color);
 }
