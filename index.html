@@ -13,26 +13,24 @@
 </head>
 <body>    
     <!-- Шапка страницы -->
- <header class="header">
-     <div class="container">
-      <nav>
-        <!-- The logo is always a link -->
-        <div class="container-logo">
+ <header class="header page-header">
+   <!-- The logo is always a link -->        
           <a class="logo" lang="en" href="./index.html">        
           <span class="logo-part">Web</span>Studio
           </a>  
-        </div>      
-       <ul class="site-nav list">
-           <li><a class="site-nav-link current" href="./index.html">Студия</a></li>
-           <li><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
-           <li><a class="site-nav-link" href="">Контакты</a></li>
-       </ul>
+    <div class="container main-nav">
+      <nav>      
+        <ul class="site-nav list">
+           <li class="site-nav iten"><a class="site-nav-link current" href="./index.html">Студия</a></li>
+           <li class="site-nav iten"><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
+           <li class="site-nav iten"><a class="site-nav-link" href="">Контакты</a></li>
+        </ul>
       </nav>
-     <ul class="auth-nav list">
-        <li><a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-     </ul>   
-     </div>    
+        <ul class="auth-nav list">
+          <li class="auth-nav iten"><a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="auth-nav iten"><a class="auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>   
+    </div>    
  </header> 
    <!-- Уникальный контент страницы -->
 <main>     
@@ -51,7 +49,7 @@
             <ul class="features list ">
                 <li>
                     <h3 class="features title">Внимание к деталям</h3>
-                    <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                    <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>                    
                 </li>
                 <li>
                     <h3 class="features title">Пунктуальность</h3>
@@ -69,17 +67,17 @@
         </div>
     </section>
     <!--Чем мы занимаемся-->
-        <section class="section">
+        <section class="section nopadding">
         <div class="container">
           <h2 class="work-title centered">Чем мы занимаемся</h2>
           <ul class="work list">
-            <li>
+            <li class="work-iten">
                 <img lang="ru" src="./images/box1.jpg" alt="разработка програмного обеспечения" width="370" />
             </li>
-            <li>
+            <li class="work-iten">
                 <img lang="ru" src="./images/box2.jpg" alt="работа с мобильным приложением" width="370" /> 
             </li>
-            <li>
+            <li class="work-iten">
                 <img lang="ru" src="./images/box3.jpg" alt="подготовка палитры цветов" width="370" />
             </li>        
           </ul>  
