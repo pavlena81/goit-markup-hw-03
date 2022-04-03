@@ -13,25 +13,28 @@
 </head>
 <body>
     <!-- Шапка страницы -->
+<div class="header-portfolio">    
 <header class="header page-header">
     <!-- The logo is always a link -->
+    <div class="container main-nav">
           <a class="logo" lang="en" href="./index.html" >
           <span class="logo-part">Web</span>Studio
           </a>  
-    <div class="container main-nav">
-       <nav>    
+    
+       <nav class="nav">    
             <ul class="site-nav list">
-                 <li class="site-nav iten"><a class="site-nav-link" href="./index.html">Студия</a></li>
-                 <li class="site-nav iten"><a class="site-nav-link current" href="./portfolio.html">Портфолио</a></li>
-                 <li class="site-nav iten"><a class="site-nav-link" href="">Контакты</a></li>
+                 <li class="site-nav item"><a class="site-nav-link" href="./index.html">Студия</a></li>
+                 <li class="site-nav item"><a class="site-nav-link current" href="./portfolio.html">Портфолио</a></li>
+                 <li class="site-nav item"><a class="site-nav-link" href="">Контакты</a></li>
             </ul>
         </nav>
              <ul class="auth-nav list">
-                 <li class="auth-nav iten"><a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                 <li class="auth-nav iten"><a class="auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                 <li class="auth-nav item"><a class="auth-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                 <li class="auth-nav item"><a class="auth-nav-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
              </ul> 
     </div>    
 </header>
+</div>
 <!-- Уникальный контент страницы -->
 <main class="main">
     <section class="section">
@@ -46,7 +49,7 @@
               <li class="filters item"><button class="button secondary" type="button">Дизайн</button></li>
               <li class="filters item"><button class="button secondary" type="button">Маркетинг</button></li>
             </ul>
-          <div class="container projects">
+          
                 <ul class="projects-list list">
                     
                     <li class="projects-item">
@@ -121,26 +124,26 @@
                       </div>
                     </li>
                     
-                </ul>
-          </div>
+                </ul>          
         </div>
     </section>
 </main>
 <!--Подвал страницы-->
 <footer class="footer">
-    <div class="container">
+    <div class="container page-footer">
       <a class="footer-logo" lang="en" href="./index.html">
         <span class="logo-part">Web</span>Studio
       </a>
       <address class="address">
-        г. Киев,
-        пр-т Леси Украинки, 26,
+        <p class="footer-address">
+          г. Киев,
+          пр-т Леси Украинки, 26,
+        </p>
+        <ul class="footer list">
+          <li class="footer-link-mail"><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+          <li><a class="footer-contact-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+        </ul>
       </address>
-      
-      <ul class="footer list">
-        <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-        <li><a class="footer-contact-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-      </ul>
     </div>
 </footer>    
 </body>
